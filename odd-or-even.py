@@ -6,13 +6,24 @@ print out an appropriate message to the user.
 
 This is a temporary script file.
 """
+import math
 
-userNumber = int(input("Give a number (integer): "))
 
-if (userNumber / 2) == 1.0:
-    output = "even"
+userNumber = float(input("Give any positive number: "))
+
+
+while userNumber <= 0:
+    userNumber = float(input("Give any *positive* number: "))
 else:
-    output = "odd"
+    userNumber = userNumber
+    
+    
+workingNumber = userNumber / 2 - math.floor(userNumber / 2)
+    
+if workingNumber == 0.0:
+    output = "is 0"
+else:
+    output = "is other"
 
-print(output)
-1234567890
+
+print(workingNumber, output)
