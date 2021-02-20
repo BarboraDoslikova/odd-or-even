@@ -21,9 +21,9 @@ else:
 workingNumber = userNumber / 2 - math.floor(userNumber / 2)
     
 if workingNumber == 0.0:
-    output = "is 0"
+    output = " is an EVEN number"
 else:
-    output = "is other"
+    output = " is is not an even number"
 
 
-print(workingNumber, output)
+print(userNumber, output)
